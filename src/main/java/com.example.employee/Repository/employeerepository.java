@@ -1,6 +1,3 @@
-public class employeerepository {
-    
-}
 package com.example.employee.repository;
 
 import com.example.employee.entity.Employee;
@@ -10,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+public interface employeeRepository extends JpaRepository<Employee, Long> {
 
     // Find by Department
     List<Employee> findByDepartment(String department);
